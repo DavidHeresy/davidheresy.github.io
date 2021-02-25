@@ -1,4 +1,4 @@
-body{
+body {
     margin-top:     10em;
     margin-bottom:  5em;
     margin-left:    auto;
@@ -6,8 +6,8 @@ body{
     
     padding-top:    0;
     padding-bottom: 0;
-    padding-left:   1.5em;
-    padding-right:  1.5em;
+    padding-left:   2em;
+    padding-right:  2em;
 
     max-width:      50em;
 
@@ -18,10 +18,10 @@ body{
     padding:        0 10px;
     background:     #EEE;
     
-    font-family:    Verdana, Geneva, sans-serif;
+    font-family:    monospace, monospace;   
 }
 
-h1, h2, h3{
+h1, h2, h3 {
     line-height:    1.2;
     margin-top:     2em; 
     font-family:    "Times New Roman", Times, serif;
