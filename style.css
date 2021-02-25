@@ -18,12 +18,12 @@ body {
     padding:        0 10px;
     background:     #EEE;
     
-    font-family:    monospace, monospace;   
+    font-family:    "Times New Roman", Times, serif;
 }
 
 h1, h2, h3 {
     line-height:    1.2;
     margin-top:     2em; 
-    font-family:    "Times New Roman", Times, serif;
+    font-family:    monospace, monospace;   
 }
 
