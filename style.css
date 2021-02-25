@@ -12,13 +12,18 @@ body{
     max-width:      50em;
 
     line-height:    1.6;
-    font-size:      18px;
+    font-size:      1.2em;
+
     color:          #444;
     padding:        0 10px;
     background:     #EEE;
+    
+    font-family:    Verdana, Geneva, sans-serif;
 }
 
 h1, h2, h3{
-    line-height:    1.2
+    line-height:    1.2;
+    margin-top:     2em; 
+    font-family:    "Times New Roman", Times, serif;
 }
 
