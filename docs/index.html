@@ -19,15 +19,19 @@
 </head>
 
 <body>
-    <footer>
-        <a
-            href="/impressum">
-            Impressum</a>
-        •
-        <a
-            href="/datenschutz">
-            Datenschutzerklärung</a>
+    <footer id="footer">
     </footer>
+
+    <script>
+        window.onload = function() {
+
+            let file = "footer.html"
+
+            fetch (file)
+                .then(res => res.text())
+                .then(footer => document.getElementById("footer").innerHTML = footer);
+        }
+    </script>
 </body>
 
 </html>
