@@ -1,5 +1,5 @@
 window.onload = function() {
-    setHead();
+    setMeta();
     setTitle();
     setHeader();
     setFooter();
