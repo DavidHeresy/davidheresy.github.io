@@ -1,19 +1,40 @@
 /* -- VARIABLES -- */ 
 
 :root {
-    --max-width:        42rem;
-
-    /* --font-sans-serif:  TODO; */
-    --font-serif:       "Times New Roman", Times, serif;
-    --font-monospace:   monospace, monospace;   
-
-    --color-font:       #444;
-    --color-canvas:     #FFF;
-    --color-background: #EEE;
+    /* -- LAYOUT SIZE -- */
 
     --height-header:    7rem;
     --height-nav:       3rem;
     --height-footer:    5rem;
+    --max-width:        42rem;
+
+
+    /* -- FONT SIZE -- */
+
+    --title-size:   3.2rem;
+    --h1-size:      2.4rem;
+    --h2-size:      1.8rem;
+    --h3-size:      1.5rem;
+    --text-size:    1.2rem;
+
+
+    /* -- FONT FAMILY -- */
+
+    --font-serif:       "Times New Roman", Times, serif;
+    --font-monospace:   monospace, monospace;   
+
+
+    /* -- FONT COLOR -- */
+
+    --color-font:           #444;
+    --color-link:           #306B9B;
+    --color-link-visited:   #4C409B;
+
+
+    /* -- BACKGROUND COLOR -- */
+
+    --color-canvas:     #FFF;
+    --color-background: #EEE;
 }
 
 
@@ -31,9 +52,25 @@ body {
 
     grid-template-areas: 
         ". header ."
-        ".  nav   ."
-        ".  main  ."
+        ". nav    ."
+        ". main   ."
         ". footer .";
+}
+
+
+/* -- LINKS -- */
+
+a {
+    color: var(--color-link);
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--color-visited);
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 
@@ -45,13 +82,9 @@ header {
 }
 
 header a {
-    text-decoration:    none;
-    color:              var(--color-font);
+    font-size:  var(--title-size);
 }
 
-header a:hover {
-    text-decoration:    underline;
-}
 
 
 /* -- NAV -- */ 
@@ -93,9 +126,19 @@ main {
 
 main h1 {
     text-align:     center;
+    line-height:    1.2;
+    margin-top:     2em; 
+    font-family:    var(--font-monospace);
+    font-size:      
 }
 
-main h1, main h2, main h3 {
+main h2 {
+    line-height:    1.2;
+    margin-top:     2em; 
+    font-family:    var(--font-monospace);
+}
+
+main h3 {
     line-height:    1.2;
     margin-top:     2em; 
     font-family:    var(--font-monospace);
