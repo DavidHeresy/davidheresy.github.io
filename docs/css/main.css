@@ -1,0 +1,22 @@
+main {
+    line-height:    1.6;
+    font-size:      1.2em;
+
+    background:     #FFF;
+    color:          #444;
+    
+    font-family:    "Times New Roman", Times, serif;
+}
+
+
+main h1 {
+    text-align:     center;
+}
+
+
+main h1, main h2, main h3 {
+    line-height:    1.2;
+    margin-top:     2em; 
+    font-family:    monospace, monospace;   
+}
+
