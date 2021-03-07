@@ -59,20 +59,16 @@ nav a:hover {
 
 main {
     grid-area:      main;
-
+    min-height:     calc(100% - var(--height-header) - var(--height-footer));
     line-height:    1.6;
     font-size:      1.2em;
-
     background:     var(--color-canvas);
-    
     font-family:    var(--font-serif);
 }
-
 
 main h1 {
     text-align:     center;
 }
-
 
 main h1, main h2, main h3 {
     line-height:    1.2;
