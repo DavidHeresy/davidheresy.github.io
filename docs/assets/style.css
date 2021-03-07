@@ -1,7 +1,7 @@
 /* -- VARIABLES -- */ 
 
 :root {
-    --max-width: 42em;
+    --max-width:        42rem;
 
     /* --font-sans-serif:  TODO; */
     --font-serif:       "Times New Roman", Times, serif;
@@ -10,21 +10,30 @@
     --color-font:       #444;
     --color-canvas:     #FFF;
     --color-background: #EEE;
+
+    --height-header:    3rem;
+    --height-nav:       3rem;
+    --height-footer:    5rem;
 }
 
 
 /* -- BODY -- */ 
 
 body {
-    display:                grid;
-    grid-template-rows:     7em auto 5em;
+    background: var(--color-background);
+    display:    grid;
+
+    grid-template-rows:     
+        var(--height-header)
+        var(--height-nav)
+        auto
+        var(--height-footer);
+
     grid-template-areas: 
         ". header ."
         ".  nav   ."
         ".  main  ."
         ". footer .";
-    
-    background:     var(--color-background);
 }
 
 
@@ -59,11 +68,15 @@ nav a:hover {
 
 main {
     grid-area:      main;
-    min-height:     calc(100% - var(--height-header) - var(--height-footer));
     line-height:    1.6;
     font-size:      1.2em;
     background:     var(--color-canvas);
     font-family:    var(--font-serif);
+    min-height:     calc(
+        100% 
+        - var(--height-header) 
+        - var(--height-nav) 
+        - var(--height-footer));
 }
 
 main h1 {
