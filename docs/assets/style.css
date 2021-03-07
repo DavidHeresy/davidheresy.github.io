@@ -26,7 +26,7 @@ body {
     grid-template-rows:     
         var(--height-header)
         var(--height-nav)
-        auto
+        1fr
         var(--height-footer);
 
     grid-template-areas: 
@@ -72,11 +72,6 @@ main {
     font-size:      1.2em;
     background:     var(--color-canvas);
     font-family:    var(--font-serif);
-    min-height:     calc(
-        100% 
-        - var(--height-header) 
-        - var(--height-nav) 
-        - var(--height-footer));
 }
 
 main h1 {
