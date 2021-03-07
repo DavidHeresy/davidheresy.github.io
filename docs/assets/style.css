@@ -1,0 +1,101 @@
+/* -- VARIABLES -- */ 
+
+:root {
+    --max-width: 42em;
+
+    /* --font-sans-serif:  TODO; */
+    --font-serif:       "Times New Roman", Times, serif;
+    --font-monospace:   monospace, monospace;   
+
+    --color-font:       #444;
+    --color-canvas:     #FFF;
+    --color-background: #EEE;
+}
+
+
+/* -- BODY -- */ 
+
+body {
+    display:                grid;
+    grid-template-rows:     7em auto 5em;
+    grid-template-areas: 
+        ". header ."
+        ".  nav   ."
+        ".  main  ."
+        ". footer .";
+    
+    background:     var(--color-background);
+}
+
+
+/* -- HEADER -- */ 
+
+header {
+    grid-area: header;
+}
+
+
+/* -- NAV -- */ 
+
+nav {
+    grid-area:          nav;
+    text-align:         center;
+    font-family:        var(--font-monospace);   
+    text-decoration:    none;
+    font-weight:        bold;
+    font-size:          1em;
+}
+
+nav a {
+    text-decoration:    none;
+}
+
+nav a:hover {
+    text-decoration:    underline;
+}
+
+
+/* -- MAIN -- */ 
+
+main {
+    grid-area:      main;
+
+    line-height:    1.6;
+    font-size:      1.2em;
+
+    background:     var(--color-canvas);
+    
+    font-family:    var(--font-serif);
+}
+
+
+main h1 {
+    text-align:     center;
+}
+
+
+main h1, main h2, main h3 {
+    line-height:    1.2;
+    margin-top:     2em; 
+    font-family:    var(--font-monospace);
+}
+
+
+/* -- FOOTER -- */
+
+footer {
+    grid-area:      footer;
+    text-align:     center;
+    font-size:      1em;
+    background:     var(--color-canvas);
+    font-family:    var(--font-monospace);
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+

@@ -6,36 +6,36 @@ window.onload = function() {
 }
 
 
-function setHead() {
-    fetch ("https://davidheresy.de/html/head.html")
+function setMeta() {
+    fetch ("https://davidheresy.de/assets/meta.html")
         .then(response => response.text())
-        .then(head => {
-            document.getElementsByTagName("head")[0].innerHTML += head;
+        .then(meta => {
+            document.querySelector("head").innerHTML += meta;
         });
 }
 
 
 function setTitle() {
-    let h1 = document.getElementsByTagName("h1")[0];
+    let h1 = document.qurySelector("main h1");
     document.title = h1.innerHTML + " • davidheresy.de";
 }
 
 
 function setHeader() {
-    fetch ("https://davidheresy.de/html/header.html")
+    fetch ("https://davidheresy.de/assets/header.html")
         .then(response => response.text())
         .then(header => {
-            let body = document.getElementsByTagName("body")[0];
+            let body = document.querySelector("body");
             body.innerHTML = header + body.innerHTML;
         });
 }
 
 
 function setFooter() {
-    fetch ("https://davidheresy.de/html/footer.html")
+    fetch ("https://davidheresy.de/assets/footer.html")
         .then(response => response.text())
         .then(footer => {
-            let body = document.getElementsByTagName("body")[0];
+            let body = document.querySelector("body");
             body.innerHTML = body.innerHTML + footer;
         });
 }
