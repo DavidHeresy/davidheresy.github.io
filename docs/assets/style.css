@@ -117,10 +117,21 @@ footer    { font-size: 1rem;    }
 
 /* -- ALIGNMENT -- */
 
-header, nav, footer, main h1 { text-align: center; }
+main h1 { text-align: center; }
+
+/* header, nav, footer { */
+/*     text-align:     center; */
+/*     vertical-align: center; */
+/* } */
+
+/* header { line-height: var(--height-header); } */
+/* nav    { line-height: var(--height-nav);    } */
+/* footer { line-height: var(--height-footer); } */
+
 header, nav, footer {
-    vertical-align: middle;
-    line-height:    100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
