@@ -30,6 +30,11 @@ h1, h2, h3 {
     font-family:    monospace, monospace;   
 }
 
+header {
+    text-align:     center;
+}
+
 footer {
     text-align:     center;
 }
+
