@@ -11,7 +11,7 @@
     --color-canvas:     #FFF;
     --color-background: #EEE;
 
-    --height-header:    3rem;
+    --height-header:    7rem;
     --height-nav:       3rem;
     --height-footer:    5rem;
 }
@@ -40,7 +40,17 @@ body {
 /* -- HEADER -- */ 
 
 header {
-    grid-area: header;
+    grid-area:      header;
+    vertical-align: middle;
+}
+
+header a {
+    text-decoration:    none;
+    color:              var(--color-font);
+}
+
+header a:hover {
+    text-decoration:    underline;
 }
 
 
@@ -52,11 +62,13 @@ nav {
     font-family:        var(--font-monospace);   
     text-decoration:    none;
     font-weight:        bold;
+    vertical-align:     middle;
     font-size:          1em;
 }
 
 nav a {
     text-decoration:    none;
+    color:              var(--color-font);
 }
 
 nav a:hover {
@@ -98,6 +110,7 @@ footer {
     font-size:      1em;
     background:     var(--color-canvas);
     font-family:    var(--font-monospace);
+    vertical-align: middle;
 }
 
 footer a {
