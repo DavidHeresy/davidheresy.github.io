@@ -16,7 +16,7 @@ function setMeta() {
 
 
 function setTitle() {
-    let h1 = document.qurySelector("main h1");
+    let h1 = document.querySelector("main h1");
     document.title = h1.innerHTML + " • davidheresy.de";
 }
 
