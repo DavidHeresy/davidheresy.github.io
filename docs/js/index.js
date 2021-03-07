@@ -25,7 +25,8 @@ function setHeader() {
     fetch ("https://davidheresy.de/html/header.html")
         .then(response => response.text())
         .then(header => {
-            document.getElementsByTagName("header")[0].innerHTML = header;
+            let body = document.getElementsByTagName("body")[0];
+            body.innerHTML = header + body.innerHTML;
         });
 }
 
@@ -34,7 +35,8 @@ function setFooter() {
     fetch ("https://davidheresy.de/html/footer.html")
         .then(response => response.text())
         .then(footer => {
-            document.getElementsByTagName("footer")[0].innerHTML = footer;
+            let body = document.getElementsByTagName("body")[0];
+            body.innerHTML = body.innerHTML + footer;
         });
 }
 
