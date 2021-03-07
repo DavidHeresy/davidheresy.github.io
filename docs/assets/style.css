@@ -31,7 +31,10 @@ h1, h2, h3 {
 }
 
 header {
-    text-align:     center;
+    text-align:         center;
+    font-family:        monospace, monospace;   
+    text-decoration:    none;
+    font-weight:        bold;
 }
 
 footer {
