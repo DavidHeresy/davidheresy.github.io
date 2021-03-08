@@ -52,7 +52,7 @@ body {
     /* margin-right: auto; */
     display: grid;
 
-    grid-template-columns: auto var(--width) auto;
+    grid-template-columns: 1fr var(--width) 1fr;
 
     grid-template-rows:     
         var(--height-header)
